@@ -1,1 +1,7 @@
 @use "../../global" as g;
+
+.logo {
+  &__image {
+    display: block;
+  }
+}

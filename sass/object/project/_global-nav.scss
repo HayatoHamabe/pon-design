@@ -1,1 +1,19 @@
 @use "../../global" as g;
+
+.p-global-nav {
+  text-transform: uppercase;
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+  &__item {
+    font-size: 0.75rem;
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+  &__link {
+    color: #fff;
+    font-weight: bold;
+  }
+}
