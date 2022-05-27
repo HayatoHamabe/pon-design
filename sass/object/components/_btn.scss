@@ -16,6 +16,7 @@
 .c-btn-line {
   display: block;
   position: relative;
+  text-align: center;
   width: 100%;
   height: 2px;
   background-color: #fff;
@@ -68,5 +69,11 @@
   transition: 0.3s;
   &:hover {
     opacity: 0.8;
+  }
+}
+
+.c-btn__transparent {
+  @include g.mq(md) {
+    display: block;
   }
 }
