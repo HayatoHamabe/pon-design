@@ -703,6 +703,36 @@ img {
   text-align: center;
 }
 
+.p-works {
+  position: relative;
+}
+.p-works__inner {
+  display: flex;
+}
+.p-works__img-wrapper {
+  width: 59%;
+  margin-right: 30px;
+}
+.p-works__desc {
+  text-align: center;
+}
+.p-works__desc::after {
+  content: "";
+  background-color: #f0f0f0;
+  position: absolute;
+  left: 40%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.p-works__heading {
+  margin-bottom: 30px;
+}
+.p-works__text {
+  margin-bottom: 30px;
+}
+
 .u-sp-only {
   display: none;
 }

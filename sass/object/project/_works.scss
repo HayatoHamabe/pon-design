@@ -1,1 +1,31 @@
 @use "../../global" as g;
+
+.p-works {
+  position: relative;
+  &__inner {
+    display: flex;
+  }
+  &__img-wrapper {
+    width: 59%;
+    margin-right: 30px;
+  }
+  &__desc {
+    text-align: center;
+    &::after {
+      content: "";
+      background-color: g.$color-gray;
+      position: absolute;
+      left: 40%;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+  &__heading {
+    margin-bottom: 30px;
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+}
