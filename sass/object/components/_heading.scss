@@ -12,6 +12,7 @@
     margin-top: 10px;
   }
   @include g.mq(md) {
+    font-size: 1.875rem;
     text-align: center;
   }
 }

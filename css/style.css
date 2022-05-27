@@ -400,6 +400,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .c-heading-primary {
+    font-size: 1.875rem;
     text-align: center;
   }
 }
@@ -511,11 +512,23 @@ img {
 .c-card-wrapper {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .c-card-wrapper {
+    display: block;
+  }
 }
 
+.c-card {
+  margin-bottom: 30px;
+}
 .c-card:not(:last-child) {
   margin-right: 25px;
+}
+@media screen and (max-width: 768px) {
+  .c-card:not(:last-child) {
+    margin-right: 0;
+  }
 }
 .c-card__title {
   font-size: 1.125rem;

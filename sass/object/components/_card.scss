@@ -3,12 +3,20 @@
 .c-card-wrapper {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 30px;
+  @include g.mq(md) {
+    display: block;
+  }
 }
 
 .c-card {
+  margin-bottom: 30px;
   &:not(:last-child) {
     margin-right: 25px;
+  }
+  @include g.mq(md) {
+    &:not(:last-child) {
+      margin-right: 0;
+    }
   }
   &__title {
     font-size: 1.125rem;
