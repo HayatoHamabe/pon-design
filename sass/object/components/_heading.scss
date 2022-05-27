@@ -11,4 +11,7 @@
     font-size: 0.8125rem;
     margin-top: 10px;
   }
+  @include g.mq(md) {
+    text-align: center;
+  }
 }

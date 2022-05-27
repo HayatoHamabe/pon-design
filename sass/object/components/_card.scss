@@ -1,1 +1,22 @@
 @use "../../global" as g;
+
+.c-card-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.c-card {
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+  &__title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+  }
+  &__text {
+    color: g.$color-text;
+  }
+}
