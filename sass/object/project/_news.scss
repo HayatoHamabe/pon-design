@@ -1,1 +1,35 @@
 @use "../../global" as g;
+
+.p-news {
+  &__inner {
+    display: flex;
+    max-width: 950px;
+  }
+  &__heading {
+    margin-right: 50px;
+  }
+}
+
+.p-news-list {
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  &__date {
+    color: g.$color-text;
+    margin-right: 20px;
+  }
+  &__heading {
+    display: flex;
+  }
+  &__label {
+    width: 80px;
+    margin-right: 20px;
+  }
+  &__link {
+    color: g.$color-text;
+  }
+}
