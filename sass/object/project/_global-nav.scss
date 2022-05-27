@@ -2,14 +2,41 @@
 
 .p-global-nav {
   text-transform: uppercase;
+  @include g.mq(md) {
+    // background-image: linear-gradient(135deg, #7633a4, #250d65);
+    // display: flex;
+    // align-items: center;
+    // justify-self: center;
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+    // visibility: hidden;
+    // opacity: 0;
+  }
   &__list {
     display: flex;
     list-style: none;
+    @include g.mq(md) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
   }
   &__item {
     font-size: 0.75rem;
     &:not(:last-child) {
-      margin-right: 25px;
+      -right: 15px;
+    }
+    @include g.mq(md) {
+      font-size: 1rem;
+      margin-right: 0;
+      margin-bottom: 25px;
+      &:not(:last-child) {
+        margin-right: 0;
+      }
     }
   }
   &__link {

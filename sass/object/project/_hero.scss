@@ -1,6 +1,55 @@
 @use "../../global" as g;
 
 .p-hero {
-  background-color: orange;
-  height: 768px;
+  background-image: url("/img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  height: 100lvh;
+  display: flex;
+  position: relative;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  &__inner {
+    text-align: center;
+    padding: 0 30px;
+  }
+  &__title {
+    font-size: 4.5rem;
+    font-weight: bold;
+    // 単位なし=自要素のフォントサイズによって行間が変わる
+    line-height: 1;
+  }
+  &__subtitle {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  &__link {
+    text-align: center;
+    margin-top: 50px;
+  }
+  &__scroll {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.75em;
+    line-height: 1;
+    padding: 10px 10px 90px;
+    // 文字を縦書きにする
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      background-color: #fff;
+      width: 1px;
+      height: 80px;
+    }
+  }
 }

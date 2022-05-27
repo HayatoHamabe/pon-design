@@ -4,4 +4,7 @@
   &__image {
     display: block;
   }
+  @include g.mq(md) {
+    width: 120px;
+  }
 }
