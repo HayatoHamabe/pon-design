@@ -28,7 +28,7 @@
   &__item {
     font-size: 0.75rem;
     &:not(:last-child) {
-      margin-right: 15px;
+      -right: 15px;
     }
     @include g.mq(md) {
       font-size: 1rem;
