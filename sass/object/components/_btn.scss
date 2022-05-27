@@ -1,5 +1,30 @@
 @use "../../global" as g;
 
+.c-btn {
+  background-size: 200%;
+  background-image: linear-gradient(
+    to right,
+    #7633a4 0%,
+    #250d65 51%,
+    #7633a4 100%
+  );
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 9999px;
+  width: 220px;
+  padding: 18px 0;
+  transition: 0.3s;
+  &:hover {
+    background-position: right center;
+  }
+}
+
+// top-hero-button
 .c-btn-menu {
   display: none;
   @include g.mq(md) {
@@ -56,23 +81,11 @@
   }
 }
 
-.c-btn {
-  display: inline-block;
-  color: #fff;
-  font-weight: bold;
-  line-height: 1.2;
-  text-transform: uppercase;
-  border: 1px solid #fff;
-  border-radius: 9999px;
-  width: 220px;
-  padding: 18px 0;
-  transition: 0.3s;
+.c-btn__transparent {
+  background-image: none;
   &:hover {
     opacity: 0.8;
   }
-}
-
-.c-btn__transparent {
   @include g.mq(md) {
     display: block;
   }
