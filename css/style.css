@@ -753,11 +753,44 @@ img {
   margin-bottom: 30px;
 }
 
-.u-sp-only {
+.p-company__inner {
+  background-image: url("/img/bg-circle.png"), url("/img/bg-face.png");
+  background-position: center center center center;
+  background-size: contain;
+}
+@media screen and (max-width: 768px) {
+  .p-company__inner {
+    background-image: url("/img/bg-circle.png");
+  }
+}
+.p-company__heading {
+  text-align: center;
+}
+.p-company__body {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .p-company__body {
+    font-size: 2rem;
+  }
+}
+.p-company__message-underline {
+  background: linear-gradient(transparent 70%, #f5f534 0%);
+}
+.p-company__text {
+  text-align: center;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.sp-only {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  .u-sp-only {
+  .sp-only {
     display: block;
   }
 }

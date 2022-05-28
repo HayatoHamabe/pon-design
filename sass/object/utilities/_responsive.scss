@@ -1,7 +1,7 @@
 @use "../../global" as g;
 
 // component, project で対応できない例外を記述
-.u-sp-only {
+.sp-only {
   display: none;
   @include g.mq(md) {
     display: block;
