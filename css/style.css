@@ -709,9 +709,20 @@ img {
 .p-works__inner {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .p-works__inner {
+    display: block;
+  }
+}
 .p-works__img-wrapper {
   width: 59%;
   margin-right: 30px;
+}
+@media screen and (max-width: 768px) {
+  .p-works__img-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+  }
 }
 .p-works__desc {
   text-align: center;
@@ -725,6 +736,15 @@ img {
   height: 100%;
   width: 100%;
   z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .p-works__desc::after {
+    height: 70%;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
 }
 .p-works__heading {
   margin-bottom: 30px;
