@@ -1,1 +1,35 @@
 @use "../../global" as g;
+
+.p-company {
+  &__inner {
+    background-image: url("/img/bg-circle.png"), url("/img/bg-face.png");
+    background-position: center center center center;
+    background-size: contain;
+    @include g.mq(md) {
+      background-image: url("/img/bg-circle.png");
+    }
+  }
+  &__heading {
+    text-align: center;
+  }
+  &__body {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    @include g.mq(md) {
+      font-size: 2rem;
+    }
+  }
+  &__message-underline {
+    background: linear-gradient(transparent 70%, #f5f534 0%);
+  }
+  &__text {
+    text-align: center;
+    color: g.$color-text;
+    margin-bottom: 50px;
+  }
+  &__link {
+    text-align: center;
+  }
+}
