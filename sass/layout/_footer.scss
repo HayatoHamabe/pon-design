@@ -1,6 +1,39 @@
 @use "../global" as g;
 
 .l-footer {
-  background-color: blue;
-  height: 100px;
+  background-color: #120e19;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 30px;
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  &__link {
+    color: #fff;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__copyright {
+    font-size: 0.625rem;
+    text-align: center;
+    color: g.$color-text;
+  }
+  &__copyright-link {
+    color: #a798b7;
+    text-transform: uppercase;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
