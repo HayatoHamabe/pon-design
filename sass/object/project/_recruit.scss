@@ -1,1 +1,24 @@
 @use "../../global" as g;
+
+.p-recruit {
+  &__inner {
+    display: flex;
+  }
+  &__desc {
+    background-color: g.$color-gray;
+    text-align: center;
+    padding: 70px 40px;
+    flex: 1;
+  }
+  &__heading {
+    margin-bottom: 30px;
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__img-wrapper {
+    background-image: url("/img/recruit.jpg");
+    background-size: cover;
+    width: 60%;
+  }
+}

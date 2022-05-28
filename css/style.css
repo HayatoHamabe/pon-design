@@ -789,6 +789,27 @@ img {
   text-align: center;
 }
 
+.p-recruit__inner {
+  display: flex;
+}
+.p-recruit__desc {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 70px 40px;
+  flex: 1;
+}
+.p-recruit__heading {
+  margin-bottom: 30px;
+}
+.p-recruit__text {
+  margin-bottom: 30px;
+}
+.p-recruit__img-wrapper {
+  background-image: url("/img/recruit.jpg");
+  background-size: cover;
+  width: 60%;
+}
+
 .sp-only {
   display: none;
 }
