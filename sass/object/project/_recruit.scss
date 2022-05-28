@@ -3,6 +3,7 @@
 .p-recruit {
   &__inner {
     display: flex;
+    padding: 0 15px;
     @include g.mq(md) {
       flex-direction: column-reverse;
     }
