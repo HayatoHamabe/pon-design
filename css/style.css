@@ -785,6 +785,9 @@ img {
   color: #333;
   margin-bottom: 50px;
 }
+.p-company__link {
+  text-align: center;
+}
 
 .sp-only {
   display: none;
