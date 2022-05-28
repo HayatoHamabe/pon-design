@@ -822,6 +822,24 @@ img {
   }
 }
 
+.p-contact {
+  background-color: #f0f0f0;
+  padding: 80px 0;
+  margin-top: 40px;
+}
+.p-contact__heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.p-contact__text {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+.p-contact__link {
+  text-align: center;
+}
+
 .sp-only {
   display: none;
 }
