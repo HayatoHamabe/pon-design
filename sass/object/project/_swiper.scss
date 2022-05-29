@@ -1,1 +1,45 @@
 @use "../../global" as g;
+
+.swiper {
+  padding-bottom: 30px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  bottom: 0;
+  content: "";
+  height: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  width: 0;
+  width: 20px;
+  height: 20px;
+  border-top: 4px solid g.$color-primary;
+  border-right: 4px solid g.$color-primary;
+}
+
+.swiper-button-next::after {
+  right: 10px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.swiper-button-prev::after {
+  left: 10px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+  text-align: right;
+  color: g.$color-primary;
+}
+
+.swiper-pagination-bullet-active {
+  background: g.$color-primary;
+}
