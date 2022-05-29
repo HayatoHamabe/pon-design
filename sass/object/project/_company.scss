@@ -14,11 +14,11 @@
   }
   &__body {
     text-align: center;
-    font-size: 2.5rem;
+    @include g.font-size(40);
     font-weight: bold;
     position: relative;
     @include g.mq(md) {
-      font-size: 2rem;
+      @include g.font-size(32);
     }
   }
   &__message-underline {

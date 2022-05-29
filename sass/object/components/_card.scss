@@ -19,7 +19,7 @@
     }
   }
   &__title {
-    font-size: 1.125rem;
+    @include g.font-size(18);
     font-weight: bold;
     text-align: center;
     margin: 10px 0;

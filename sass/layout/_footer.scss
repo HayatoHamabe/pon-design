@@ -18,14 +18,14 @@
   }
   &__link {
     color: #fff;
-    font-size: 0.75rem;
+    @include g.font-size(12);
     text-transform: uppercase;
     &:hover {
       opacity: 0.8;
     }
   }
   &__copyright {
-    font-size: 0.625rem;
+    @include g.font-size(10);
     text-align: center;
     color: g.$color-text;
   }
