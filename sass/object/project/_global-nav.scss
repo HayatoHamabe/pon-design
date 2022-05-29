@@ -33,12 +33,12 @@
     }
   }
   &__item {
-    font-size: 0.75rem;
+    @include g.font-size(12);
     &:not(:last-child) {
       margin-right: 25px;
     }
     @include g.mq(md) {
-      font-size: 1rem;
+      @include g.font-size(16);
       margin-right: 0;
       margin-bottom: 25px;
       &:not(:last-child) {

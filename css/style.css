@@ -429,6 +429,7 @@ img {
 }
 .l-footer__link {
   color: #fff;
+  font-size: 12px;
   font-size: 0.75rem;
   text-transform: uppercase;
 }
@@ -436,6 +437,7 @@ img {
   opacity: 0.8;
 }
 .l-footer__copyright {
+  font-size: 10px;
   font-size: 0.625rem;
   text-align: center;
   color: #333;
@@ -457,16 +459,19 @@ img {
   display: flex;
   flex-direction: column;
   color: #391e88;
+  font-size: 36px;
   font-size: 2.25rem;
   text-transform: uppercase;
   line-height: 1;
 }
 .c-heading-primary__sub {
+  font-size: 13px;
   font-size: 0.8125rem;
   margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
   .c-heading-primary {
+    font-size: 30px;
     font-size: 1.875rem;
     text-align: center;
   }
@@ -559,6 +564,7 @@ img {
 .c-label-category {
   display: block;
   color: #333;
+  font-size: 12px;
   font-size: 0.75rem;
   font-weight: bold;
   text-align: center;
@@ -598,6 +604,7 @@ img {
   }
 }
 .c-card__title {
+  font-size: 18px;
   font-size: 1.125rem;
   font-weight: bold;
   text-align: center;
@@ -645,6 +652,7 @@ img {
   }
 }
 .p-global-nav__item {
+  font-size: 12px;
   font-size: 0.75rem;
 }
 .p-global-nav__item:not(:last-child) {
@@ -652,6 +660,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .p-global-nav__item {
+    font-size: 16px;
     font-size: 1rem;
     margin-right: 0;
     margin-bottom: 25px;
@@ -688,22 +697,26 @@ img {
   }
 }
 .p-hero__title {
+  font-size: 72px;
   font-size: 4.5rem;
   font-weight: bold;
   line-height: 1;
 }
 @media screen and (max-width: 768px) {
   .p-hero__title {
+    font-size: 40px;
     font-size: 2.5rem;
     line-height: 1.2;
   }
 }
 .p-hero__subtitle {
+  font-size: 24px;
   font-size: 1.5rem;
   margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
   .p-hero__subtitle {
+    font-size: 16px;
     font-size: 1rem;
   }
 }
@@ -722,7 +735,8 @@ img {
   bottom: 0;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 0.75em;
+  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1;
   padding: 10px 10px 90px;
   -ms-writing-mode: tb-lr;
@@ -859,12 +873,14 @@ img {
 }
 .p-company__body {
   text-align: center;
+  font-size: 40px;
   font-size: 2.5rem;
   font-weight: bold;
   position: relative;
 }
 @media screen and (max-width: 768px) {
   .p-company__body {
+    font-size: 32px;
     font-size: 2rem;
   }
 }
