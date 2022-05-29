@@ -583,7 +583,7 @@ img {
   opacity: 1;
 }
 .c-page-top-link:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .c-page-top-link__arrow {
   height: 20px;
@@ -683,6 +683,7 @@ img {
 .p-global-nav__item {
   font-size: 12px;
   font-size: 0.75rem;
+  position: relative;
 }
 .p-global-nav__item:not(:last-child) {
   margin-right: 25px;
@@ -701,6 +702,19 @@ img {
 .p-global-nav__link {
   color: #fff;
   font-weight: bold;
+}
+.p-global-nav__link:hover::after {
+  width: 100%;
+}
+.p-global-nav__link::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 1px;
+  transition: width 0.3s;
 }
 
 .p-hero {
