@@ -4,49 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>Document</title>
   </head>
   <body id="body">
-    <header class="l-header" id="header">
-      <div class="l-header__logo">
-        <h1 class="logo">
-          <a href="." class="logo__link">
-            <img src="./img/logo.svg" alt="logo" class="logo__image" />
-          </a>
-        </h1>
-      </div>
-
-      <div class="l-header__nav">
-        <nav class="p-global-nav" id="global-nav">
-          <ul class="p-global-nav__list">
-            <li class="p-global-nav__item">
-              <a href="news.html" class="p-global-nav__link">news</a>
-            </li>
-            <li class="p-global-nav__item">
-              <a href="service.html" class="p-global-nav__link">service</a>
-            </li>
-            <li class="p-global-nav__item">
-              <a href="works.html" class="p-global-nav__link">works</a>
-            </li>
-            <li class="p-global-nav__item">
-              <a href="company.html" class="p-global-nav__link">company</a>
-            </li>
-            <li class="p-global-nav__item">
-              <a href="recuruit.html" class="p-global-nav__link">recruit</a>
-            </li>
-            <li class="p-global-nav__item">
-              <a href="contact.html" class="p-global-nav__link">contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <button class="c-btn-menu" onclick="toggle()">
-        <span class="c-btn-line" id="hamburger-line"></span>
-      </button>
-    </header>
+    <!-- import header -->
+    <header class="l-header" id="header"></header>
 
     <div class="p-hero">
       <div class="p-hero__inner">
@@ -189,13 +156,25 @@
               <div class="swiper-wrapper">
                 <!-- スライド -->
                 <div class="swiper-slide">
-                  <img src="/img/works/smoothiesta.jpg" alt="" class="p-works__img" />
+                  <img
+                    src="/img/works/smoothiesta.jpg"
+                    alt=""
+                    class="p-works__img"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/img/works/web-conference.jpg" alt="" class="p-works__img" />
+                  <img
+                    src="/img/works/web-conference.jpg"
+                    alt=""
+                    class="p-works__img"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/img/works/lamina.jpg" alt="" class="p-works__img" />
+                  <img
+                    src="/img/works/lamina.jpg"
+                    alt=""
+                    class="p-works__img"
+                  />
                 </div>
               </div>
               <!-- <div class="swiper-pagenation"></div> -->
@@ -309,44 +288,21 @@
       </section>
     </main>
 
-    <footer class="l-footer">
-      <div class="l-footer__main">
-        <ul class="l-footer__list">
-          <li class="l-footer__item">
-            <a href="." class="l-footer__link">home</a>
-          </li>
-          <li class="l-footer__item">
-            <a href="news.html" class="l-footer__link">news</a>
-          </li>
-          <li class="l-footer__item">
-            <a href="service.html" class="l-footer__link">service</a>
-          </li>
-          <li class="l-footer__item">
-            <a href="works.html" class="l-footer__link">works</a>
-          </li>
-          <li class="l-footer__item">
-            <a href="company.html" class="l-footer__link">company</a>
-          </li>
-          <li class="l-footer__item">
-            <a href="recruit.html" class="l-footer__link">recruit</a>
-          </li>
-          <li class="l-footer__item">
-            <a href="contact.html" class="l-footer__link">contact</a>
-          </li>
-        </ul>
-      </div>
+    <!-- import footer -->
+    <footer class="l-footer" id="footer"></footer>
 
-      <div class="l-footer__copyright">
-        <a href="." class="l-footer__copyright-link"><small>&copy;</small>pon design</p>
-      </div>
-    </footer>
-
-    <a href="#body" class="c-page-top-link">
-      <svg class="c-page-top-link__arrow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m18.787 9.473s-4.505-4.502-6.259-6.255c-.147-.146-.339-.22-.53-.22-.192 0-.384.074-.531.22-1.753 1.753-6.256 6.252-6.256 6.252-.147.147-.219.339-.217.532.001.19.075.38.221.525.292.293.766.295 1.056.004l4.977-4.976v14.692c0 .414.336.75.75.75.413 0 .75-.336.75-.75v-14.692l4.978 4.978c.289.29.762.287 1.055-.006.145-.145.219-.335.221-.525.002-.192-.07-.384-.215-.529z" fill-rule="nonzero"/></svg>
-    </a>
+    <!-- import page-top-link -->
+    <div id="page-top-link"></div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#header").load("/common/header.html");
+        $("#footer").load("/common/footer.html");
+        $("#page-top-link").load("/common/page-top-link.html");
+      });
+    </script>
   </body>
 </html>
