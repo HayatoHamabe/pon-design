@@ -582,6 +582,9 @@ img {
 .c-page-top-link.is-show {
   opacity: 1;
 }
+.c-page-top-link:hover {
+  opacity: 0.8;
+}
 .c-page-top-link__arrow {
   height: 20px;
   margin: auto;
