@@ -359,6 +359,42 @@ img {
   background-color: #391e88;
 }
 
+@-webkit-keyframes scrollDownLine {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
+}
+@keyframes scrollDownLine {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
+}
 .l-inner {
   max-width: 1140px;
   padding: 70px 0;
@@ -449,7 +485,6 @@ img {
   border-radius: 9999px;
   width: 220px;
   padding: 18px 0;
-  transition: 0.3s;
 }
 .c-btn:hover {
   background-position: right center;
@@ -477,6 +512,7 @@ img {
   width: 100%;
   height: 2px;
   background-color: #fff;
+  transition: 0.3s;
 }
 .c-btn-line::before, .c-btn-line::after {
   position: absolute;
@@ -494,17 +530,17 @@ img {
 .c-btn-line::after {
   top: 8px;
 }
-.c-btn-line.is-acrive {
+.c-btn-line.is-active {
   background-color: transparent;
 }
-.c-btn-line.is-acrive::before, .c-btn-line.is-acrive::after {
+.c-btn-line.is-active::before, .c-btn-line.is-active::after {
   top: 0;
   background-color: #fff;
 }
-.c-btn-line.is-acrive::before {
+.c-btn-line.is-active::before {
   transform: rotate(45deg);
 }
-.c-btn-line.is-acrive::after {
+.c-btn-line.is-active::after {
   transform: rotate(-45deg);
 }
 
@@ -573,6 +609,28 @@ img {
 
 .p-global-nav {
   text-transform: uppercase;
+  transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+  .p-global-nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-self: center;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-global-nav.is-show {
+    background-image: linear-gradient(135deg, #7633a4, #250d65);
+    opacity: 1;
+    visibility: visible;
+  }
 }
 .p-global-nav__list {
   display: flex;
@@ -678,6 +736,8 @@ img {
   background-color: #fff;
   width: 1px;
   height: 80px;
+  -webkit-animation: scrollDownLine 1.5s infinite;
+  animation: scrollDownLine 1.5s infinite;
 }
 
 .p-news__inner {

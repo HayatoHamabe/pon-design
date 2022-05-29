@@ -18,7 +18,7 @@
       </div>
 
       <div class="l-header__nav">
-        <nav class="p-global-nav">
+        <nav class="p-global-nav" id="global-nav">
           <ul class="p-global-nav__list">
             <li class="p-global-nav__item">
               <a href="news.html" class="p-global-nav__link">news</a>
@@ -42,8 +42,8 @@
         </nav>
       </div>
 
-      <button class="c-btn-menu js-button-menu">
-        <span class="c-btn-line"></span>
+      <button class="c-btn-menu" onclick="toggle()">
+        <span class="c-btn-line" id="hamburger-line"></span>
       </button>
     </header>
 
@@ -321,5 +321,8 @@
         <a href="." class="l-footer__copyright-link"><small>&copy;</small>pon design</p>
       </div>
     </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common/header.js"></script>
   </body>
 </html>
