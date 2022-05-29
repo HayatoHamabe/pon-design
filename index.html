@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>Document</title>
   </head>
@@ -183,7 +184,25 @@
       <section class="p-works">
         <div class="p-works__inner l-inner">
           <div class="p-works__img-wrapper">
-            <img src="/img/works/smoothiesta.jpg" alt="" class="p-works__img" />
+            <div class="swiper">
+              <!-- 必要に応じたwrapper -->
+              <div class="swiper-wrapper">
+                <!-- スライド -->
+                <div class="swiper-slide">
+                  <img src="/img/works/smoothiesta.jpg" alt="" class="p-works__img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/img/works/web-conference.jpg" alt="" class="p-works__img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/img/works/lamina.jpg" alt="" class="p-works__img" />
+                </div>
+              </div>
+              <!-- <div class="swiper-pagenation"></div> -->
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
 
           <div class="p-works__desc">
@@ -198,8 +217,8 @@
               ご購入やお申込み数の増加などを実現します！
             </div>
 
-            <div class="p-service__link">
-              <a href="service.html" class="c-btn">more</a>
+            <div class="p-works__link">
+              <a href="works.html" class="c-btn">more</a>
             </div>
           </div>
         </div>
@@ -327,6 +346,7 @@
     </a>
 
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
