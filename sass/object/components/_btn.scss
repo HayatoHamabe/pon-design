@@ -18,7 +18,6 @@
   border-radius: 9999px;
   width: 220px;
   padding: 18px 0;
-  transition: 0.3s;
   &:hover {
     background-position: right center;
   }
@@ -45,6 +44,7 @@
   width: 100%;
   height: 2px;
   background-color: #fff;
+  transition: 0.3s;
   &::before,
   &::after {
     position: absolute;
@@ -63,7 +63,7 @@
     top: 8px;
   }
 
-  &.is-acrive {
+  &.is-active {
     background-color: transparent;
     &::before,
     &::after {
