@@ -15,6 +15,9 @@
   &.is-show {
     opacity: 1;
   }
+  &:hover {
+    opacity: 0.6;
+  }
   &__arrow {
     height: 20px;
     margin: auto;
