@@ -1,1 +1,38 @@
 @use "../../global" as g;
+
+.c-media {
+  display: flex;
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  &__img-wrapper {
+    flex: 0 1 40%;
+    margin-right: 50px;
+    @include g.mq(md) {
+      margin-right: 0;
+    }
+  }
+  @include g.mq(md) {
+    display: block;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__body {
+    flex: 1;
+  }
+  &__title {
+    @include g.font-size(24);
+    @include g.mq(md) {
+      text-align: center;
+      @include g.font-size(18);
+      margin: 10px 0 20px;
+    }
+  }
+  &__text {
+    @include g.font-size(15);
+    @include g.mq(md) {
+      @include g.font-size(14);
+    }
+  }
+}
