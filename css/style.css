@@ -622,6 +622,55 @@ img {
   }
 }
 
+.c-media {
+  display: flex;
+}
+.c-media:not(:last-child) {
+  margin-bottom: 60px;
+}
+.c-media__img-wrapper {
+  flex: 0 1 40%;
+  margin-right: 50px;
+}
+@media screen and (max-width: 768px) {
+  .c-media__img-wrapper {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .c-media {
+    display: block;
+  }
+}
+.c-media__img {
+  width: 100%;
+}
+.c-media__body {
+  flex: 1;
+}
+.c-media__title {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .c-media__title {
+    text-align: center;
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin: 10px 0 20px;
+  }
+}
+.c-media__text {
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+@media screen and (max-width: 768px) {
+  .c-media__text {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+
 .c-card-wrapper {
   display: flex;
   justify-content: space-around;
