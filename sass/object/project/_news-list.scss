@@ -1,1 +1,41 @@
 @use "../../global" as g;
+
+.p-news-list-wrapper-inner {
+  max-width: 780px;
+}
+
+.p-news-list {
+  &__body {
+    margin-bottom: 80px;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 15px;
+    @include g.mq(md) {
+      display: block;
+    }
+  }
+  &__heading {
+    display: flex;
+    align-items: center;
+  }
+  &__date {
+    @include g.font-size(14);
+    color: g.$color-text;
+    margin-right: 20px;
+  }
+  &__label {
+    width: 80px;
+    margin-right: 20px;
+  }
+  &__link {
+    @include g.font-size(15);
+    color: g.$color-text;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
