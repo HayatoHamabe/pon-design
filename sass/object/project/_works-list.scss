@@ -1,1 +1,10 @@
 @use "../../global" as g;
+
+.p-works-list {
+  display: flex;
+  flex-wrap: wrap;
+  &__text {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
