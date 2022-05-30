@@ -1,1 +1,26 @@
 @use "../../global" as g;
+
+.p-breadcrumb {
+  background-color: #f7f7f7;
+  position: sticky;
+  top: 64px;
+  padding: 10px 0;
+}
+
+.p-breadcrumb-list {
+  list-style: none;
+  display: flex;
+  &__item {
+    color: #555;
+    @include g.font-size(12);
+  }
+  &__link {
+    color: g.$color-primary;
+    @include g.font-size(12);
+    &::after {
+      padding: 0 0.5em;
+      content: ">";
+      color: #555;
+    }
+  }
+}
