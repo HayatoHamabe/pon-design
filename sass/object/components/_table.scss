@@ -1,1 +1,14 @@
 @use "../../global" as g;
+
+.c-table {
+  width: 100%;
+  border-collapse: collapse;
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    text-align: left;
+    width: 20%;
+    padding: 30px 10px;
+  }
+}

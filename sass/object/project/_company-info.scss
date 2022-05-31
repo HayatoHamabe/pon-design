@@ -1,1 +1,7 @@
 @use "../../global" as g;
+
+.p-company-info {
+  &__table {
+    margin-bottom: 60px;
+  }
+}

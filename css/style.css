@@ -462,7 +462,6 @@ img {
 }
 
 .l-section {
-  max-width: 1110px;
   padding: 70px 15px;
 }
 @media screen and (max-width: 768px) {
@@ -491,6 +490,15 @@ img {
     font-size: 1.875rem;
     text-align: center;
   }
+}
+
+.c-heading-secondary {
+  text-align: center;
+  font-weight: bold;
+  color: #391e88;
+  font-size: 32px;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .c-btn {
@@ -706,6 +714,19 @@ img {
 }
 .c-card__text {
   color: #333;
+}
+
+.c-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.c-table tr {
+  border-bottom: 1px solid #ddd;
+}
+.c-table th {
+  text-align: left;
+  width: 20%;
+  padding: 30px 10px;
 }
 
 .p-breadcrumb {
@@ -1206,6 +1227,48 @@ img {
 .p-works-list__text {
   text-align: center;
   margin-top: 10px;
+}
+
+.p-greeting {
+  background-image: url("/img/bg-circle.png"), url("/img/bg-face.png");
+  background-position: center 0, center 40px;
+}
+.p-greeting__inner {
+  background-size: contain;
+}
+@media screen and (max-width: 768px) {
+  .p-greeting__inner {
+    background-image: url("/img/bg-circle.png");
+  }
+}
+.p-greeting__heading {
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+.p-greeting__message-underline {
+  background: linear-gradient(transparent 70%, #f5f534 0%);
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .p-greeting__message-underline {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+.p-greeting__text {
+  text-align: center;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 160px;
+}
+.p-greeting__link {
+  text-align: center;
+}
+
+.p-company-info__table {
+  margin-bottom: 60px;
 }
 
 .p-contact {
