@@ -450,8 +450,18 @@ img {
   list-style: none;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 768px) {
+  .l-footer__list {
+    flex-wrap: wrap;
+  }
+}
 .l-footer__item:not(:last-child) {
   margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__item {
+    margin-bottom: 15px;
+  }
 }
 .l-footer__link {
   color: #fff;
