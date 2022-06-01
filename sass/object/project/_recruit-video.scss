@@ -1,0 +1,9 @@
+@use "../../global" as g;
+
+.p-recruit-video {
+  margin-bottom: 70px;
+  &__video {
+    width: 100%;
+    height: 100%;
+  }
+}

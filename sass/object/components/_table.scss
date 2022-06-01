@@ -1,1 +1,35 @@
 @use "../../global" as g;
+
+.c-table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    text-align: left;
+    width: 20%;
+    padding: 30px 10px;
+    @include g.mq(md) {
+      width: 100%;
+      display: block;
+      padding: 0;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+  }
+  td {
+    margin-bottom: 20px;
+    @include g.mq(md) {
+      display: block;
+      padding: 0;
+    }
+  }
+  ul {
+    margin-left: 20px;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+}

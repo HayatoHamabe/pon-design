@@ -16,3 +16,11 @@
     text-align: center;
   }
 }
+
+.c-heading-secondary {
+  text-align: center;
+  font-weight: bold;
+  color: g.$color-primary;
+  @include g.font-size(32);
+  margin-bottom: 10px;
+}

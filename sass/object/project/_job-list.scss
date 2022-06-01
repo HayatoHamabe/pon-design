@@ -1,1 +1,31 @@
 @use "../../global" as g;
+
+.p-jop-list {
+  &__heading {
+    text-align: center;
+    @include g.font-size(24);
+    font-weight: bold;
+    @include g.mq(md) {
+      @include g.font-size(16);
+    }
+  }
+  &__table {
+    padding: 70px 100px;
+    background-color: #fff;
+    border: 1px solid g.$color-primary;
+    border-radius: 8px;
+    @include g.mq(md) {
+      padding: 30px 20px;
+    }
+  }
+  &__link {
+    text-align: center;
+    margin-top: 60px;
+    p {
+      @include g.font-size(14);
+      @include g.mq(md) {
+        @include g.font-size(12);
+      }
+    }
+  }
+}
