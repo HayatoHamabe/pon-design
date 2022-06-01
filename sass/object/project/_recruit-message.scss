@@ -1,1 +1,28 @@
 @use "../../global" as g;
+
+.p-recruit-message {
+  text-align: center;
+  &__title {
+    @include g.font-size(72);
+    color: g.$color-primary;
+    @include g.mq(md) {
+      @include g.font-size(48);
+    }
+  }
+  &__subtitle {
+    @include g.font-size(32);
+    color: g.$color-primary;
+    margin-bottom: 20px;
+    @include g.mq(md) {
+      @include g.font-size(18);
+    }
+  }
+  &__text {
+    @include g.mq(md) {
+      @include g.font-size(15);
+    }
+  }
+  &__img {
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  }
+}
