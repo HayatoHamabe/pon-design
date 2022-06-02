@@ -784,6 +784,64 @@ img {
   margin-bottom: 15px;
 }
 
+.c-form__item {
+  margin-bottom: 30px;
+}
+.c-form__title {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+.c-form__require {
+  color: #391e88;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+.c-form__radio:not(:last-child) {
+  margin-right: 30px;
+}
+.c-form__input {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #c1afde;
+  border-radius: 4px;
+  width: 300px;
+  padding: 8px;
+}
+@media screen and (max-width: 768px) {
+  .c-form__input {
+    width: 100%;
+  }
+}
+.c-form__textarea {
+  background-color: #fff;
+  min-width: 600px;
+  min-height: 200px;
+  border: 1px solid #c1afde;
+  padding: 8px;
+}
+@media screen and (max-width: 768px) {
+  .c-form__textarea {
+    min-width: 100%;
+  }
+}
+.c-form__select {
+  display: block;
+  background-color: #fff;
+  padding: 8px;
+  border: 1px solid #c1afde;
+  border-radius: 4px;
+}
+
+input[type=tel] {
+  width: 200px;
+}
+@media screen and (max-width: 768px) {
+  input[type=tel] {
+    width: 100%;
+  }
+}
+
 .p-breadcrumb {
   background-color: #f7f7f7;
   position: -webkit-sticky;
@@ -1055,6 +1113,32 @@ img {
     font-size: 0.75rem;
     margin-top: 0;
   }
+}
+
+.p-contact {
+  background-color: #f0f0f0;
+  padding: 80px 0;
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .p-contact {
+    margin-top: 30px;
+  }
+}
+.p-contact__inner {
+  padding: 0;
+}
+.p-contact__heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.p-contact__text {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+.p-contact__link {
+  text-align: center;
 }
 
 .p-news-list-wrapper-inner {
@@ -1409,30 +1493,21 @@ img {
   height: 100%;
 }
 
-.p-contact {
-  background-color: #f0f0f0;
-  padding: 80px 0;
-  margin-top: 40px;
+.p-contact-form__inner {
+  max-width: 780px;
+}
+.p-contact-form__lead {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.p-contact-form__body {
+  padding: 70px;
+  background-color: #f7f7f7;
 }
 @media screen and (max-width: 768px) {
-  .p-contact {
-    margin-top: 30px;
+  .p-contact-form__body {
+    padding: 30px;
   }
-}
-.p-contact__inner {
-  padding: 0;
-}
-.p-contact__heading {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.p-contact__text {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
-.p-contact__link {
-  text-align: center;
 }
 
 .sp-only {

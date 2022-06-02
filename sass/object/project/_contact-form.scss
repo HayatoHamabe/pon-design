@@ -1,25 +1,18 @@
 @use "../../global" as g;
 
-.p-contact {
-  background-color: g.$color-gray;
-  padding: 80px 0;
-  margin-top: 40px;
-  @include g.mq(md) {
-    margin-top: 30px;
-  }
+.p-contact-form {
   &__inner {
-    padding: 0;
+    max-width: 780px;
   }
-  &__heading {
+  &__lead {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
-  &__text {
-    text-align: center;
-    color: g.$color-text;
-    margin-bottom: 20px;
-  }
-  &__link {
-    text-align: center;
+  &__body {
+    padding: 70px;
+    background-color: #f7f7f7;
+    @include g.mq(md) {
+      padding: 30px;
+    }
   }
 }
