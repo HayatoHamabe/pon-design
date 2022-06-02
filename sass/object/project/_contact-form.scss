@@ -4,4 +4,15 @@
   &__inner {
     max-width: 780px;
   }
+  &__lead {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__body {
+    padding: 70px;
+    background-color: #f7f7f7;
+    @include g.mq(md) {
+      padding: 30px;
+    }
+  }
 }

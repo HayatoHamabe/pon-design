@@ -18,8 +18,8 @@
     <div class="p-sub-hero">
       <div class="p-sub-hero__inner">
         <div class="p-sub-hero__heading">
-          <h2 class="p-sub-hero__title">news</h2>
-          <div class="p-sub-hero__subtitle">お知らせ</div>
+          <h2 class="p-sub-hero__title">CONTACT</h2>
+          <div class="p-sub-hero__subtitle">お問い合わせ</div>
         </div>
       </div>
     </div>
@@ -85,24 +85,24 @@
                 <span class="c-form__radio">
                   <input
                     type="radio"
-                    id="type1"
+                    id="type2"
                     name="type"
                     value="お見積りのご依頼"
                   />
-                  <label for="type1">お見積りのご依頼</label>
+                  <label for="type2">お見積りのご依頼</label>
                 </span>
                 <span class="c-form__radio">
                   <input
                     type="radio"
-                    id="type1"
+                    id="type3"
                     name="type"
                     value="採用について"
                   />
-                  <label for="type1">採用について</label>
+                  <label for="type3">採用について</label>
                 </span>
                 <span class="c-form__radio">
-                  <input type="radio" id="type1" name="type" value="その他" />
-                  <label for="type1">その他</label>
+                  <input type="radio" id="type4" name="type" value="その他" />
+                  <label for="type4">その他</label>
                 </span>
               </div>
 
@@ -111,12 +111,24 @@
                   >お名前
                   <span class="c-form__require">*必須</span>
                 </label>
-                <input type="text" id="name" name="type" checked />
+                <input
+                  class="c-form__input"
+                  type="text"
+                  id="name"
+                  name="type"
+                  checked
+                />
               </div>
 
               <div class="c-form__item">
                 <label for="company" class="c-form__title">会社名 </label>
-                <input type="text" id="company" name="type" checked />
+                <input
+                  class="c-form__input"
+                  type="text"
+                  id="company"
+                  name="type"
+                  checked
+                />
               </div>
 
               <div class="c-form__item">
@@ -124,7 +136,13 @@
                   >メールアドレス
                   <span class="c-form__require">*必須</span>
                 </label>
-                <input type="text" id="email" name="type" checked />
+                <input
+                  class="c-form__input"
+                  type="email"
+                  id="email"
+                  name="type"
+                  checked
+                />
               </div>
 
               <div class="c-form__item">
@@ -132,7 +150,13 @@
                   >お電話番号
                   <span class="c-form__require">*必須</span>
                 </label>
-                <input type="text" id="tel" name="tel" checked />
+                <input
+                  class="c-form__input"
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  checked
+                />
               </div>
 
               <div class="c-form__item">
@@ -141,6 +165,7 @@
                   <span class="c-form__require">*必須</span>
                 </label>
                 <textarea
+                  class="c-form__textarea"
                   name="comment"
                   id="comment"
                   placeholder="お問い合わせ内容を具体的にご記入くださいませ。"
@@ -149,10 +174,10 @@
 
               <div class="c-form__item">
                 <label for="job" class="c-form__title"
-                  >PON DESIGNをどちらでお知りになりましたか？</label
-                >
-                <span class="c-form__require">*必須</span>
-                <select name="job" id="job">
+                  >PON DESIGNをどちらでお知りになりましたか？
+                  <span class="c-form__require">*必須</span>
+                </label>
+                <select class="c-form__select" name="job" id="job">
                   <option value>選択してください</option>
                   <option value="Google/Yahoo検索">Google/Yahoo検索</option>
                   <option value="SNS">SNS</option>
