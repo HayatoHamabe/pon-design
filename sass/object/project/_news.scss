@@ -16,3 +16,9 @@
     }
   }
 }
+
+.p-article-wrapper {
+  &__inner {
+    max-width: 750px;
+  }
+}

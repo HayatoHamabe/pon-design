@@ -5,9 +5,6 @@
 }
 
 .p-news-list {
-  &__body {
-    margin-bottom: 80px;
-  }
   &__list {
     list-style: none;
   }
@@ -20,7 +17,6 @@
   }
   &__heading {
     display: flex;
-    align-items: center;
   }
   &__date {
     @include g.font-size(14);

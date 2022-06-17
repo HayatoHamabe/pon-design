@@ -1,1 +1,12 @@
 @use "../../global" as g;
+
+.p-post-sns-share {
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+  &__item {
+    vertical-align: bottom;
+    margin-right: 4px;
+  }
+}
